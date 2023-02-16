@@ -1,0 +1,13 @@
+<div id="part2">
+    <label for="movie1">Choose the first movie:</label>
+    <input type="text" name="movie1" #movie1>
+    <label for="movie2">Choose the second movie:</label>
+    <input type="text" name="movie2" #movie2>
+    <label for="movie3">Choose the third movie:</label>
+    <input type="text" name="movie3" #movie3>
+    <button (click)="results(movie1.value,movie2.value,movie3.value)">Search</button>
+    <div *ngIf="movies$ | async as movies">
+        <p id="runtime">{{movies | runtime}}  minutes</p>
+        <p id="population" *ngIf="countries$ | async as countries">{{countries | population}} people</p>
+    </div>
+</div>

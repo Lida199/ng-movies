@@ -1,0 +1,28 @@
+<div *ngIf="movie;" class="wrapper">
+    <div class="flex">
+        <img src="{{movie.poster}}" alt="poster">
+        <div>
+            <h1>Movie Details:</h1>
+            <hr>
+            <h2>{{movie.title}}</h2>
+            <h4>{{movie.year}}</h4>
+            <p>{{movie.actors}}</p>
+            <h5>Plot:</h5>
+            <p>{{movie.plot}}</p>
+            <p>{{movie.countries}}</p>
+        </div>
+    </div>
+    <div class="my-review">
+        <h2>My Review:</h2>
+        <hr>
+        <ngb-rating [rate]="movie.rating" [max]="5" (click)="changingScore(movie.id, movie, rating.rate)" #rating></ngb-rating>
+        <div *ngIf="!editMode">{{movie.review}}</div>
+        <textarea *ngIf="editMode" name="review" #review>{{movie.review}}</textarea>
+        <button *ngIf="!editMode" class="edit" (click)="setEditMode()">Edit</button>
+        <div *ngIf="editMode">
+            <button class="save" (click)="saveEditedReview(movie.id, movie)">Save</button>
+            <button class="cancel" (click)="cancelEditMode()">Cancel</button>
+        </div>
+    </div>
+    <button class="delete" (click)="deleteMovie(movie.id)">Delete this movie from favourites</button>
+</div>

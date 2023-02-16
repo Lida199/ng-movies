@@ -1,0 +1,49 @@
+// @import "bootstrap/scss/bootstrap";
+
+div {
+    margin-left: 100px;
+}
+h3{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+label{
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+textarea{
+    display: block;
+    width: 550px;
+    height: 350px;
+    resize: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 1px solid cadetblue;
+    margin-bottom: 30px;
+    &:focus{
+        outline: transparent;
+    }
+}
+button{
+    padding: 10px 15px;
+    width: 100px;
+    font-size: 1.3rem;
+    margin-right: 30px;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 10px;
+    color: white;
+}
+button:first-of-type{
+    background-color: rgb(179, 37, 37);
+}
+button:last-of-type {
+    background-color: rgb(54, 146, 54);
+}
+ngb-rating{
+    color: #ffc107;
+    font-size: 40px;
+}

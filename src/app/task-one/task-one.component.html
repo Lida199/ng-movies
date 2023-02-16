@@ -1,0 +1,24 @@
+<div class="part1">
+    <label for="movie">Choose the movie:</label>
+    <input type="text" name="movie" id="movie" #search>
+    <button (click)="searchMovie(search.value)" class="button">Search</button>
+    <div class="results" *ngIf="movie$ | async as movie">
+        <div>
+            <img src="{{movie.Poster}}" alt="poster">
+        </div>
+        <div>
+            <h2>{{movie.Title}}</h2>
+            <p *ngIf="movie.Year">{{movie.Year | productionYear}}</p>
+            <p>{{movie.Actors | actorsNames}}</p>
+            <h5>Plot:</h5>
+            <p>{{movie.Plot}}</p>
+            <div *ngIf="countries$ | async as countries">
+               <p *ngFor="let country of countries; let i= index;">{{country[0].name.common}} - 
+                {{(country | currencies).name}} - {{(country | currencies).symbol}} - 
+                <img src="{{country[0].cca2 | flags}}" alt="flag">
+               </p>
+            </div>
+            <button (click)="addToFavorites(movie.imdbID, movie.Title, movie.Year, movie.Actors, movie.Plot, movie.Poster, movie.Country)">Add to Favorites</button>
+        </div>
+    </div>
+</div>

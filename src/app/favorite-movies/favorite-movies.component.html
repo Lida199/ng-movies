@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <h1>List of my Favourite Movies</h1>
+    <div *ngFor="let movie of allMovies$ | async" class="movie">
+        <img src="{{movie.poster}}" alt="poster">
+        <div>
+            <h2>{{movie.title}}</h2>
+            <p>{{movie.year}}</p>
+            <ngb-rating [rate]="movie.rating" [max]="5" [readonly]="true"></ngb-rating>
+            <p>{{movie.plot}}</p>
+        </div>
+        <button routerLink="/favorite-movies/{{movie.id}}">Details</button>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.part1{
+    margin-left: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+input {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(194, 191, 191);
+    }
+}
+.button{
+    margin-left: 10px;
+}
+
+.results {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    div:first-of-type{
+        margin-right: 50px
+    }
+}
+
+

@@ -1,0 +1,10 @@
+<div *ngIf="obj">
+    <h3>
+        {{obj.title}} 
+    </h3>
+    <label for="review">Please leave your review here:</label>
+    <ngb-rating [(rate)]="currentRate" [max]="5"></ngb-rating>
+    <textarea name="review" #review></textarea>
+    <button (click)="canceling()">Cancel</button>
+    <button (click)="addToServer(review.value)">Add</button>
+</div>
