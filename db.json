@@ -1,60 +1,5 @@
 {
-  "myMovies": [
-    {
-      "id": "tt0172495",
-      "title": "Gladiator",
-      "year": "2000",
-      "actors": "Russell Crowe, Joaquin Phoenix, Connie Nielsen",
-      "plot": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-      "countries": "United States, United Kingdom, Malta, Morocco",
-      "review": "hello updated!",
-      "rating": 5
-    },
-    {
-      "id": "tt4284216",
-      "title": "Healer",
-      "year": "2014–2015",
-      "actors": "Ji Chang-Wook, Park Min-Young, Tae-Mi",
-      "plot": "An old murder incident involving a group who ran an illegal broadcasting station brings together different people - a mysterious errand guy \"Healer\" who possesses disguise and fighting skills, a reporter from a second-rate tabloid...",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZGE3NGI4ZDQtNzJjOC00Y2ZjLTgxNGItNzhmZjU4YWM0ZmI4XkEyXkFqcGdeQXVyNjUyNzU5NzA@._V1_SX300.jpg",
-      "countries": "South Korea",
-      "review": "hello",
-      "rating": 3
-    },
-    {
-      "id": "tt0499549",
-      "title": "Avatar",
-      "year": "2009",
-      "actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver",
-      "plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
-      "countries": "United States",
-      "review": "hello",
-      "rating": 3
-    },
-    {
-      "id": "tt3243098",
-      "title": "Heirs",
-      "year": "2013",
-      "actors": "Lee Min-Ho, Park Shin-Hye, Kim Woo-bin",
-      "plot": "After a chance encounter in LA, two teens from different social backgrounds reunite at an exclusive high school attended by Korea's über rich.",
-      "poster": "https://m.media-amazon.com/images/M/MV5BMWJhMTg0MWUtNmVlYi00YjdiLWI2ZmMtYWNiZTA2MGE2NWZlXkEyXkFqcGdeQXVyMjgyNTU2OTQ@._V1_SX300.jpg",
-      "countries": "South Korea",
-      "review": "I loved it!",
-      "rating": 3
-    },
-    {
-      "id": "tt0434665",
-      "title": "Bleach",
-      "year": "2004–2012",
-      "actors": "Johnny Yong Bosch, Michelle Ruff, Stephanie Sheh",
-      "plot": "High school student Ichigo Kurosaki, who has the ability to see ghosts, gains soul reaper powers from Rukia Kuchiki and sets out to save the world from \"Hollows\".",
-      "poster": "https://m.media-amazon.com/images/M/MV5BZjE0YjVjODQtZGY2NS00MDcyLThhMDAtZGQwMTZiOWNmNjRiXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
-      "countries": "Japan",
-      "review": "I absolutely adored it!",
-      "rating": 3
-    },
+  "favoriteMovies": [
     {
       "id": "tt0398286",
       "title": "Tangled",
@@ -64,17 +9,6 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@._V1_SX300.jpg",
       "countries": "United States",
       "review": "I enjoyed it!",
-      "rating": 5
-    },
-    {
-      "id": "tt5124082",
-      "title": "Heartstrings",
-      "year": "2016",
-      "actors": "Alix Vaillot, Jean-Stan Du Pac, Charles Berling",
-      "plot": "Marie is a violent cello and very talented teenager in school. Victor is a friendly boy, dynamic, but who knows some academic difficulties. Ignoring that Mary is losing sight, Victor falls in love with her. And little by little, t...",
-      "poster": "https://m.media-amazon.com/images/M/MV5BY2YyMTZhZmMtYzgyOS00ODViLWE0OTAtNWY5MWJkOTdmMWY0XkEyXkFqcGdeQXVyNDcxMTMxMDI@._V1_SX300.jpg",
-      "countries": "France, Belgium",
-      "review": "mkjlkjhlk",
       "rating": 4
     },
     {
@@ -86,7 +20,117 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
       "countries": "United States",
       "review": "nkdhgdnfghodf i was updated! twice! three times! Four times! again!",
-      "rating": 2
+      "rating": 5
+    },
+    {
+      "id": "tt2652092",
+      "title": "The Good Lie",
+      "year": "2014",
+      "actors": "Reese Witherspoon, Arnold Oceng, Ger Duany",
+      "plot": "A group of Sudanese refugees, given the chance to resettle in the U.S., arrive in Kansas City, Missouri, where their encounter with an employment agency counselor forever changes all of their lives.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjA0Njc1MzA4MF5BMl5BanBnXkFtZTgwODc1MjUwMjE@._V1_SX300.jpg",
+      "countries": "Kenya, India, United States, Canada, South Africa",
+      "review": "b .kj';kkhgjghkgh hkjhgjghkjjmljkljkl updates",
+      "rating": 1
+    }
+  ],
+  "myMovies": [
+    {
+      "title": "film 1",
+      "countries": [
+        "Anguilla"
+      ],
+      "releaseDate": "2023-03-03",
+      "genres": [
+        "Drama",
+        "Horror",
+        "Comedy"
+      ],
+      "type": "Movie",
+      "rating": 4,
+      "duration": 155,
+      "id": 1
+    },
+    {
+      "title": "film 2",
+      "countries": [
+        "Germany"
+      ],
+      "location": "Theathre",
+      "releaseDate": "2023-03-08",
+      "genres": [
+        "Action",
+        "Romance"
+      ],
+      "type": "TV Show",
+      "rating": 2,
+      "seriesAmount": 120,
+      "id": 2
+    },
+    {
+      "title": "film 3",
+      "countries": [
+        "Angola"
+      ],
+      "releaseDate": "2023-07-05",
+      "genres": [
+        "Horror",
+        "Action"
+      ],
+      "type": "Movie",
+      "rating": 4,
+      "duration": 125,
+      "id": 3
+    },
+    {
+      "title": "film 4",
+      "countries": [
+        "United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "location": "Somewhere",
+      "releaseDate": "2023-03-09",
+      "genres": [
+        "Romance"
+      ],
+      "type": "Movie",
+      "rating": 5,
+      "duration": 170,
+      "id": 4
+    },
+    {
+      "title": "film 5",
+      "countries": [
+        "Argentina"
+      ],
+      "releaseDate": "2023-04-26",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "type": "TV Show",
+      "rating": 4,
+      "seriesAmount": 120,
+      "id": 5
+    },
+    {
+      "title": "film 6",
+      "releaseDate": "2023-04-07",
+      "genres": [
+        "Romance",
+        "Action",
+        "Comedy",
+        "Horror",
+        "Drama"
+      ],
+      "type": "TV Show",
+      "rating": 5,
+      "countries": [
+        "Germany",
+        "Algeria",
+        "Azerbaijan"
+      ],
+      "seriesAmount": 12,
+      "id": 6
     }
   ]
 }

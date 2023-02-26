@@ -1,0 +1,93 @@
+<form *ngIf="movie" class="wrapper" [formGroup]="form">
+    <div class="title">
+        <label>Movie Title: </label>
+        <input type="text" formControlName="title">
+        <div *ngIf="form.controls.title.errors && form.controls.title.dirty" class="error">
+            <div *ngIf="form.controls.title.errors['required']">
+                Title is required.
+            </div>
+            <div *ngIf="form.controls.title.errors['minlength']">
+                Title min length is 3 characters.
+            </div>
+            <div *ngIf="form.controls.title.errors['maxlength']">
+                Title max length is 10 characters.
+            </div>
+            <div *ngIf="form.controls['title'].errors['isUsed']">
+                The title already existes. Please use a different title.
+            </div> 
+        </div>
+    </div>
+    <div formArrayName="countries" class="countries" *ngIf="form.controls.countries">
+        <div *ngFor="let countryControl of form.controls.countries.controls; let i =index">
+            <select  [formControl]="countryControl">
+                <option [value]="null" hidden>Select Country</option>
+                <option *ngFor="let country of allCountries$ | async | countriesPipe: form.value.countries : countryControl.value" [value]="country.name">{{country.name}}</option>
+            </select>
+            <button *ngIf="i !== 0" type="button" (click)="deleteControl(i)" class="delete">Delete</button>
+        </div>
+        <div *ngIf="form.controls.countries.errors && form.controls.countries.dirty" class="error">
+            <div *ngIf="form.controls.countries.errors['countryNotSelected']">
+                Please select at least one country.
+            </div>
+        </div>
+        <button type="button" (click)="addControl()">Add Country</button>
+    </div>
+    <div class="location" *ngIf="form.controls.location">
+        <label>Premiere Location:</label>
+        <input type="text" formControlName="location">
+    </div>
+    <div class="date">
+        <label>Release Date:</label>
+        <input type="date" formControlName="releaseDate" [min]="today" class="block">
+        <div *ngIf="form.controls['releaseDate'].errors" class="error">
+            <div *ngIf="form.controls['releaseDate'].errors['required']">
+                Please indicate the release date.
+            </div>
+            <div *ngIf="form.controls['releaseDate'].errors['invalidDate']">
+                Invalid date. Please indicate current or future value.
+            </div>
+        </div>
+    </div>
+    <app-checkbox formControlName="genres" [start]="movie.genres"></app-checkbox>
+    <div *ngIf="form.controls['genres'].errors" class="error">
+        <div *ngIf="form.controls['genres'].errors['required']">
+            Please indicate at least one genre.
+        </div>
+    </div>
+    <div class="type">
+        <label>Please select the type of the movie:</label>
+        <div>
+            <input type="radio" id="movie" value="Movie" formControlName="type">
+            <label for="movie"></label>Movie<br>
+            <input type="radio" id="tvshow" value="TV Show" formControlName="type">
+            <label for="tvshow">TV Show</label><br>
+        </div>
+    </div>
+    <div *ngIf="form.controls.duration" class="details">
+        <label>Please indicate the duration of the movie:</label>
+        <input type="number" formControlName="duration">
+        <div *ngIf="form.controls['duration'].errors" class="error">
+            <div *ngIf="form.controls['duration'].errors['required']">
+                Please indicate the duration of the movie.
+            </div>
+            <div *ngIf="form.controls['duration'].errors['min']">
+                Minimun duration for the movie is 60 minutes.
+            </div>
+            <div *ngIf="form.controls['duration'].errors['max']">
+                Maximum duration for the movie is 190 minutes.
+            </div>
+        </div>
+    </div>
+    <div *ngIf="form.controls.seriesAmount" class="details">
+        <label>Please indicate the amount of series:</label>
+        <input type="number" formControlName="seriesAmount">
+    </div>
+    <div class="review">
+        <label for="review">Please leave your review here:</label>
+        <ngb-rating [max]="5" [rate]="movie.rating" formControlName="rating"></ngb-rating>
+    </div>
+    <div class="flex">
+        <button type="button" (click)="cancel()" class="cancel">Cancel</button>
+        <button type="button" (click)="edit(movie.id)">Edit</button>
+    </div>
+</form>

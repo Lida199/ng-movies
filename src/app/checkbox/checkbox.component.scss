@@ -1,0 +1,14 @@
+fieldset {
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    margin-bottom: 15px;
+}
+
+legend{
+    float: inherit;
+    width: auto;
+}
+input{
+    margin: 0 5px 5px 10px;
+}

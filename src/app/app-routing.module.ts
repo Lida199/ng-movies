@@ -6,6 +6,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AddToFavoritesComponent } from './add-to-favorites/add-to-favorites.component';
 import { TaskOneComponent } from './task-one/task-one.component';
 import { TaskTwoComponent } from './task-two/task-two.component';
+import { AddMovieComponent } from './add-movie/add-movie.component';
+import { MyMoviesComponent } from './my-movies/my-movies.component';
+import { EditMyMovieComponent } from './edit-my-movie/edit-my-movie.component';
 
 const routes: Routes = [
   {
@@ -15,6 +18,10 @@ const routes: Routes = [
   {
     path: 'add',
     component: AddToFavoritesComponent,
+  },
+  {
+    path: 'add-movie',
+    component: AddMovieComponent,
   },
   {
     path: 'task-2',
@@ -27,6 +34,14 @@ const routes: Routes = [
   {
     path: 'favorite-movies/:id',
     component: EditFavoriteComponent,
+  },
+  {
+    path: 'my-movies',
+    component: MyMoviesComponent,
+  },
+  {
+    path: 'my-movies/:id',
+    component: EditMyMovieComponent,
   },
   {
     path: '**',

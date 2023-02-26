@@ -1,0 +1,23 @@
+.wrapper{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.movie{
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: cadetblue;
+    margin-bottom: 30px;
+    padding: 0 30px;
+    border-radius: 10px;
+}
+button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: transparent;
+    &:hover{
+        background-color: rgb(194, 191, 191);
+    }
+}

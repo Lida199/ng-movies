@@ -1,3 +1,5 @@
+import { FormControl, FormArray } from '@angular/forms';
+
 export interface Movie {
   Title: string;
   Year: string;
@@ -38,4 +40,46 @@ export interface FavoriteMovie {
   countries: string;
   review: string;
   rating: number;
+}
+
+export interface MyMovie {
+  title: FormControl<string | null>;
+  countries: FormArray<FormControl<string | null>>;
+  releaseDate: FormControl<string | null>;
+  genres: FormControl<string[] | null>;
+  type: FormControl<string | null>;
+  duration?: FormControl<number | null>;
+  seriesAmount?: FormControl<number | null>;
+  rating: FormControl<number | null>;
+  location?: FormControl<string | null>;
+}
+
+export interface MyData {
+  title: string;
+  genres: string[];
+  countries: string[];
+  rating: number;
+  releaseDate: string;
+  seriesAmount?: number;
+  duration?: number;
+  type: string;
+  location?: string;
+  id: number;
+}
+
+export interface AllCountries {
+  name: string;
+  population: number;
+}
+
+export interface MyMovie2 {
+  title: FormControl<string | null>;
+  countries?: FormArray<FormControl<string | null>>;
+  releaseDate: FormControl<string | null>;
+  genres: FormControl<string[] | null>;
+  type: FormControl<string | null>;
+  duration?: FormControl<number | null>;
+  seriesAmount?: FormControl<number | null>;
+  rating: FormControl<number | null>;
+  location: FormControl<string | null>;
 }

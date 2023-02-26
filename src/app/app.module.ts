@@ -22,6 +22,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddMovieComponent } from './add-movie/add-movie.component';
+import { CountriesPipe } from './pipes/countries.pipe';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { MyMoviesComponent } from './my-movies/my-movies.component';
+import { EditMyMovieComponent } from './edit-my-movie/edit-my-movie.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +43,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EditFavoriteComponent,
     NotFoundComponent,
     AddToFavoritesComponent,
+    AddMovieComponent,
+    CountriesPipe,
+    CheckboxComponent,
+    MyMoviesComponent,
+    EditMyMovieComponent,
   ],
   imports: [
     BrowserModule,

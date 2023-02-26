@@ -1,0 +1,115 @@
+form {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.block {
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  display: block;
+  background-color: rgb(29, 90, 92);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  outline: transparent;
+  border: transparent;
+}
+
+select {
+  width: 450px;
+}
+
+.submitted {
+  input{
+    outline: transparent;
+    &.ng-invalid {
+      border: 2px solid red;
+    }
+
+    &.ng-valid {
+      border: 2px solid rgb(88, 233, 88);
+    }
+  }
+  .countries.ng-invalid{
+    select{
+      outline: transparent;
+      border: 2px solid red;
+    }
+  }
+  .countries.ng-valid{
+    select{
+      outline: transparent;
+      border: 2px solid rgb(88, 233, 88);
+    }
+  }
+}
+ 
+.title {
+  label{
+    display: block;
+    font-size: 1.5rem;
+  }
+  input{
+    padding: 10px 15px;
+    margin-bottom:15px;
+    width:450px;
+  }
+}
+
+.error{
+  color:red;
+  font-size:1.25rem;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 11.5px 15px;
+  margin-bottom: 15px;
+}
+
+.delete{
+  background-color: rgb(179, 37, 37);
+  display: inline-block;
+  margin-left: 10px;
+}
+.location, .date, .details {
+  label{
+    font-size: 1.5rem;
+    display: block;
+  }
+  input{
+    width: 450px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.type{
+  label:first-of-type{
+    font-size: 1.5rem;
+  }
+  input{
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  label:last-of-type{
+    margin-bottom: 15px;
+  }
+}
+
+.review {
+  label {
+    font-size: 1.5rem;
+    display: block;
+  }
+}
+
+ngb-rating {
+  font-size: 45px;
+}
+button[type='submit']{
+  margin-bottom: 50px;
+}

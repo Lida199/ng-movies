@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <h1>List of my My Movies</h1>
+    <div *ngFor="let movie of myMovies$ | async" class="movie">
+        <div>
+            <h2>TITLE: {{movie.title}}</h2>
+            <p>COUNTRIES: {{movie.countries}}</p>
+            <p *ngIf="movie.location">PREMIERE LOCATION: {{movie.location}}</p>
+            <p>RELEASE DATE: {{movie.releaseDate}}</p>
+            <p>GENRES: {{movie.genres}}</p>
+            <p>TYPE: {{movie.type}}</p>
+            <p *ngIf="movie.duration">DURATION: {{movie.duration}} minutes</p>
+            <p *ngIf="movie.seriesAmount">{{movie.seriesAmount}} series</p>
+            <ngb-rating [rate]="movie.rating" [max]="5" [readonly]="true"></ngb-rating>
+        </div>
+        <button routerLink="/my-movies/{{movie.id}}">Edit</button>
+    </div>
+</div>
